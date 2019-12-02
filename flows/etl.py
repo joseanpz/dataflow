@@ -1,36 +1,22 @@
 from prefect import task, Flow
-import random
-from time import sleep
-
-a = [1, 2, 3, 4, 5]
-b = [5, 4, 3, 2, 1]
-
 
 @task
-def inc(x):
-    sleep(random.random() / 10)
-    return x + 1
-
-
-@task
-def dec(x):
-    sleep(random.random() / 10)
-    return x - 1
-
+def extract():
+    """Get a list of data"""
+    return [1, 2, 3]
 
 @task
-def add(x, y):
-    sleep(random.random() / 10)
-    return x + y
+def transform(data):
+    """Multiply the input by 10"""
+    return [i * 10 for i in data]
+
+@task
+def load(data):
+    """Print the data to indicate it was received"""
+    print("Here's your data: {}".format(data))
 
 
-@task(name="sum")
-def list_sum(arr):
-    return sum(arr)
-
-
-with Flow("dask-example") as flow:
-    incs = inc.map(a)
-    decs = dec.map(b)
-    adds = add.map(incs, decs)
-    total = list_sum(adds)
+with Flow('ETL') as etl_flow:
+    e = extract()
+    t = transform(e)
+    l = load(t)
