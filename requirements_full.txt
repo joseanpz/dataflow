@@ -22,7 +22,7 @@ graphviz==0.13.2
 HeapDict==1.0.1
 idna==2.8
 importlib-metadata==0.23
-Jinja2==2.10.3
+Jinja2==2.11.3
 locket==0.2.0
 MarkupSafe==1.1.1
 marshmallow==3.2.1
