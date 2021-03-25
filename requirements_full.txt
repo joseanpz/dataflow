@@ -57,7 +57,7 @@ python-slugify==4.0.0
 pytz==2019.3
 pytzdata==2019.3
 pywin32==227
-PyYAML==5.1.2
+PyYAML==5.4
 redis==3.3.11
 regex==2019.11.1
 requests==2.22.0
