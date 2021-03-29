@@ -43,7 +43,7 @@ prefect==0.7.3
 preshed==3.0.2
 psutil==5.6.7
 py==1.8.0
-Pygments==2.5.1
+Pygments==2.7.4
 pyparsing==2.4.5
 pypiwin32==223
 pytest==5.3.0
