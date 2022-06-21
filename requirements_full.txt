@@ -32,7 +32,7 @@ msgpack==0.6.2
 murmurhash==1.0.2
 mypy==0.740
 mypy-extensions==0.4.3
-numpy==1.17.4
+numpy==1.22.0
 packaging==19.2
 partd==1.1.0
 pathspec==0.6.0
