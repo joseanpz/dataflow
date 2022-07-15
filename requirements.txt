@@ -7,7 +7,7 @@ cloudpickle==1.2.2
 croniter==0.3.30
 cymem==2.0.3
 dask==2.8.1
-distributed==2.8.1
+distributed==2021.10.0
 docker==4.1.0
 fsspec==0.6.0
 graphviz==0.13.2

@@ -14,7 +14,7 @@ coverage==4.5.4
 croniter==0.3.30
 cymem==2.0.3
 dask==2.8.1
-distributed==2.8.1
+distributed==2021.10.0
 docker==4.1.0
 execnet==1.7.1
 fsspec==0.6.0
